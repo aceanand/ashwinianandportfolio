@@ -1,0 +1,30 @@
+.footer {
+  background: rgba(10, 14, 39, 0.8);
+  padding: 40px 20px;
+  border-top: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-text {
+  font-size: 1rem;
+  color: #d4d4d8;
+  margin-bottom: 10px;
+}
+
+.footer-name {
+  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+}
+
+.footer-copyright {
+  font-size: 0.9rem;
+  color: #a1a1aa;
+}

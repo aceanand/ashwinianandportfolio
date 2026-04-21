@@ -1,0 +1,156 @@
+.about {
+  background: rgba(26, 29, 53, 0.5);
+}
+
+.about-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-text {
+  margin-bottom: 50px;
+}
+
+.about-paragraph {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #d4d4d8;
+  margin-bottom: 20px;
+  text-align: justify;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.about-paragraph:nth-child(1) { animation-delay: 0.1s; }
+.about-paragraph:nth-child(2) { animation-delay: 0.2s; }
+.about-paragraph:nth-child(3) { animation-delay: 0.3s; }
+.about-paragraph:nth-child(4) { animation-delay: 0.4s; }
+
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.stat-card {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  transition: all 0.5s ease;
+  opacity: 0;
+  animation: scaleIn 0.8s ease forwards;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-card:nth-child(1) { animation-delay: 0.2s; }
+.stat-card:nth-child(2) { animation-delay: 0.3s; }
+.stat-card:nth-child(3) { animation-delay: 0.4s; }
+
+.stat-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, transparent, rgba(59, 130, 246, 0.2), transparent);
+  transform: rotate(45deg);
+  transition: all 0.6s ease;
+}
+
+.stat-card:hover::before {
+  left: 100%;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 10px 30px rgba(59, 130, 246, 0.2);
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 10px;
+}
+
+.stat-label {
+  font-size: 1rem;
+  color: #a1a1aa;
+  font-weight: 500;
+}
+
+.education {
+  background: rgba(59, 130, 246, 0.05);
+  padding: 40px;
+  border-radius: 15px;
+  border: 1px solid rgba(59, 130, 246, 0.1);
+}
+
+.education-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #e4e4e7;
+  margin-bottom: 20px;
+}
+
+.education-card h4 {
+  font-size: 1.3rem;
+  color: #3b82f6;
+  margin-bottom: 10px;
+}
+
+.education-school {
+  font-size: 1.1rem;
+  color: #d4d4d8;
+  margin-bottom: 5px;
+}
+
+.education-year {
+  font-size: 1rem;
+  color: #a1a1aa;
+}
+
+@media (max-width: 768px) {
+  .about-paragraph {
+    font-size: 1rem;
+  }
+
+  .stat-number {
+    font-size: 2.5rem;
+  }
+
+  .education {
+    padding: 30px 20px;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

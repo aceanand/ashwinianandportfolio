@@ -1,0 +1,15 @@
+# This folder contains public assets
+
+## 📸 PLACE YOUR PROFILE PHOTO HERE
+
+Your profile photo should be:
+- Named: profile.jpg
+- Location: This folder (public/)
+- Size: 500x500px or larger (square format)
+- Format: JPG, PNG, or WebP
+
+Example:
+public/
+├── index.html
+├── profile.jpg  ← YOUR PHOTO HERE
+└── .gitkeep (this file)
