@@ -1,5 +1,4 @@
 import React from 'react';
-import { FaReact, FaNode, FaDatabase, FaExternalLinkAlt } from 'react-icons/fa';
 import './Projects.css';
 
 const Projects = () => {
